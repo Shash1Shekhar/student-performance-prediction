@@ -45,12 +45,6 @@ selected student-related information.
 
 st.caption("Built with Python, Scikit-learn and Streamlit.")
 
-st.info(
-    "This is an experimental model for learning purposes. "
-    "Its predictions should not be used to judge students "
-    "or make academic decisions."
-)
-
 st.divider()
 
 # --------------------------------
@@ -226,10 +220,4 @@ if submitted:
 
     st.progress(
         max(0.0, min(float(prediction) / 20, 1.0))
-    )
-
-    st.info(
-        "This is an experimental machine learning estimate. "
-        "It is not an actual grade or a reliable assessment "
-        "of a student's ability or potential."
     )
